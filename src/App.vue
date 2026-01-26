@@ -13,6 +13,14 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+
+        <RouterLink to="/myPage">我的路由</RouterLink>
+        <RouterLink :to="{path: '/myPage'}">我的路由</RouterLink>
+        <RouterLink :to="{name:'my-page'}">我的路由</RouterLink>
+        <br>
+        <RouterLink :to="{name:'router-query',query: {keyword: 'switch',page:1}}">01-查詢參數路由</RouterLink>
+        <RouterLink :to="{name:'router-params',params: {id: 123,category: 'iphone'}}">01-動態參數路由</RouterLink>
+        <RouterLink :to="{name:'lv1-page'}">01-巢狀路由</RouterLink>
       </nav>
     </div>
   </header>
