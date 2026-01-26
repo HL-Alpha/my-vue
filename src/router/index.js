@@ -41,7 +41,16 @@ const router = createRouter({
         component: () => import('@/views/01-nested.vue'),
       }]
     },
-
+    {
+      path: '/hook',
+      name: 'hook',
+      component: () => import('@/views/02-hook.vue'),
+    },
+    {
+      path: '/variable',
+      name: 'variable',
+      component: () => import('@/views/03-variable.vue'),
+    },
 
     // 404 頁面
     {

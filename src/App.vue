@@ -21,6 +21,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink :to="{name:'router-query',query: {keyword: 'switch',page:1}}">01-查詢參數路由</RouterLink>
         <RouterLink :to="{name:'router-params',params: {id: 123,category: 'iphone'}}">01-動態參數路由</RouterLink>
         <RouterLink :to="{name:'lv1-page'}">01-巢狀路由</RouterLink>
+        <RouterLink :to="{name:'hook'}">02-生命週期</RouterLink>
+        <RouterLink :to="{name:'variable'}">03-響應式變數</RouterLink>
       </nav>
     </div>
   </header>
