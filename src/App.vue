@@ -15,18 +15,29 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
 
         <RouterLink to="/myPage">我的路由</RouterLink>
-        <RouterLink :to="{path: '/myPage'}">我的路由</RouterLink>
-        <RouterLink :to="{name:'my-page'}">我的路由</RouterLink>
-        <br>
-        <RouterLink :to="{name:'router-query',query: {keyword: 'switch',page:1}}">01-查詢參數路由</RouterLink>
-        <RouterLink :to="{name:'router-params',params: {id: 123,category: 'iphone'}}">01-動態參數路由</RouterLink>
-        <RouterLink :to="{name:'lv1-page'}">01-巢狀路由</RouterLink>
-        <RouterLink :to="{name:'hook'}">02-生命週期</RouterLink>
-        <RouterLink :to="{name:'variable'}">03-響應式變數</RouterLink>
+        <RouterLink :to="{ path: '/myPage' }">我的路由</RouterLink>
+        <RouterLink :to="{ name: 'my-page' }">我的路由</RouterLink>
+        <br />
+        <RouterLink :to="{ name: 'router-query', query: { keyword: 'switch', page: 1 } }"
+          >01-路由參數傳遞-查詢參數(query)</RouterLink
+        >
+        <RouterLink :to="{ name: 'router-params', params: { id: 123, category: 'iphone' } }"
+          >01-路由參數傳遞-動態參數(params)</RouterLink
+        >
+        <RouterLink :to="{ name: 'lv1-page' }">01-巢狀路由</RouterLink>
+        <RouterLink :to="{ name: 'hook' }">02-生命週期</RouterLink>
+        <RouterLink :to="{ name: 'variable' }">03-響應式變數</RouterLink>
+        <RouterLink :to="{ name: 'data-binding' }">04-資料綁定 v-bind / v-model</RouterLink>
+        <RouterLink :to="{ name: 'condition' }">05-條件渲染</RouterLink>
+        <RouterLink :to="{ name: 'loop' }">06-迴圈渲染</RouterLink>
+        <RouterLink :to="{ name: 'event' }">07-事件綁定</RouterLink>
+        <RouterLink :to="{ name: 'computed' }">08-計算屬性</RouterLink>
+        <RouterLink :to="{ name: 'watch' }">09-監聽</RouterLink>
+        <RouterLink :to="{ name: 'component' }">10-元件</RouterLink>
       </nav>
     </div>
   </header>
-
+  <hr style="margin: 10px 0" />
   <RouterView />
 </template>
 

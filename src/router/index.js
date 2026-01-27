@@ -35,11 +35,14 @@ const router = createRouter({
     {
       path: '/lv1',
       name: 'lv1',
-      children: [{ // 注意這邊的 path 不需要加 /
-        path: 'page',
-        name: 'lv1-page',
-        component: () => import('@/views/01-nested.vue'),
-      }]
+      children: [
+        {
+          // 注意這邊的 path 不需要加 /
+          path: 'page',
+          name: 'lv1-page',
+          component: () => import('@/views/01-nested.vue'),
+        },
+      ],
     },
     {
       path: '/hook',
@@ -50,6 +53,41 @@ const router = createRouter({
       path: '/variable',
       name: 'variable',
       component: () => import('@/views/03-variable.vue'),
+    },
+    {
+      path: '/dataBinding',
+      name: 'data-binding',
+      component: () => import('@/views/04-dataBinding.vue'),
+    },
+    {
+      path: '/condition',
+      name: 'condition',
+      component: () => import('@/views/05-condition.vue'),
+    },
+    {
+      path: '/loop',
+      name: 'loop',
+      component: () => import('@/views/06-loop.vue'),
+    },
+    {
+      path: '/event',
+      name: 'event',
+      component: () => import('@/views/07-event.vue'),
+    },
+    {
+      path: '/computed',
+      name: 'computed',
+      component: () => import('@/views/08-computed.vue'),
+    },
+    {
+      path: '/watch',
+      name: 'watch',
+      component: () => import('@/views/09-watch.vue'),
+    },
+        {
+      path: '/component',
+      name: 'component',
+      component: () => import('@/views/10-component.vue'),
     },
 
     // 404 頁面

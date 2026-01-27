@@ -1,9 +1,7 @@
 <script setup></script>
 
 <template>
-    <h2>這是我的vue路由</h2>
+  <h2>01-路由渲染指定頁面</h2>
 </template>
 
-<style>
-
-</style>
+<style></style>
