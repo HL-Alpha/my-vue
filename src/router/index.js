@@ -84,10 +84,30 @@ const router = createRouter({
       name: 'watch',
       component: () => import('@/views/09-watch.vue'),
     },
-        {
+    {
       path: '/component',
       name: 'component',
       component: () => import('@/views/10-component.vue'),
+    },
+    {
+      path: '/env',
+      name: 'env',
+      component: () => import('@/views/11-env.vue'),
+    },
+    {
+      path: '/pinia',
+      name: 'pinia',
+      component: () => import('@/views/12-pinia.vue'),
+    },
+    {
+      path: '/pinia2',
+      name: 'pinia2',
+      component: () => import('@/views/12-pinia2.vue'),
+    },
+    {
+      path: '/axios',
+      name: 'axios',
+      component: () => import('@/views/13-axios.vue'),
     },
 
     // 404 頁面

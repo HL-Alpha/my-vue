@@ -34,6 +34,10 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink :to="{ name: 'computed' }">08-計算屬性</RouterLink>
         <RouterLink :to="{ name: 'watch' }">09-監聽</RouterLink>
         <RouterLink :to="{ name: 'component' }">10-元件</RouterLink>
+        <RouterLink :to="{ name: 'env' }">11-全域變數</RouterLink>
+        <RouterLink :to="{ name: 'pinia' }">12-狀態管理Pinia</RouterLink>
+        <RouterLink :to="{ name: 'pinia2' }">12-狀態管理Pinia2</RouterLink>
+        <RouterLink :to="{ name: 'axios' }">13-Axios 前後端串接</RouterLink>
       </nav>
     </div>
   </header>

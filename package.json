@@ -5,13 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prod": "vite --mode production",
+    "sit": "vite --mode sit",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --fix --cache",
     "format": "prettier --write --experimental-cli src/"
   },
   "dependencies": {
+    "axios": "^1.13.4",
     "pinia": "^3.0.4",
+    "pinia-plugin-persistedstate": "^4.7.1",
     "vue": "^3.5.26",
     "vue-router": "^4.6.4"
   },
